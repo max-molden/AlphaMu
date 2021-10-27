@@ -1,3 +1,16 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(231, 166, 20);
+    font-family: brandon-grotesque;
+    src: url(https://use.typekit.net/adw8ezw.css);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .title {
     text-align: center;
     font-family: brandon-grotesque;
@@ -48,63 +61,26 @@
     text-align: left;
 }
 
-body {
-    background-color: rgb(231, 166, 20);
-    font-family: brandon-grotesque;
-    src: url(https://use.typekit.net/adw8ezw.css);
-}
-
-#background-image {
+#main-div {
+    min-height: 100%;
     background-image: url('../images/greek-letters.png');
     background-size: 25%;
+    background-repeat: repeat;
 }
-
-/* body {
-    background-image: url('images/PiKappBGK.jpg');
-} */
 
 .title-wrapper {
     color: rgb(0, 85, 150);
-    /* position: absolute; */
-    clear: both;
     padding-bottom: 180px;
 }
 
-#nav-bar {
-    /* position: absolute; */
-    clear: both;
-    text-align: center;
-    margin-top: 40px;
-    background-color: rgba(0, 85, 150, .85);
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-#button-home {
-    /* background-color: rgb(231, 166, 20); */
-    background-color: black;
-    color: white;
-}
-
-#button-recruitment {
-    /* background-color: rgb(231, 166, 20); */
-    background-color: black;
-    color: white;
-}
-
-#button-fundraising {
-    background-color: black;
-    color: white;
-}
-
-#button-contactus {
+/* attribute selector */
+button[id^="button-"] {
     background-color: black;
     color: white;
 }
 
 #loc-map {
     text-align: center;
-    padding-top: 50px;
 }
 
 #loc-map iframe {
@@ -121,9 +97,7 @@ body {
 }
 
 #member-stats-div {
-    /* width: 50%; */
     text-align: center;
-    /* border: 2px solid black; */
 }
 
 #rush-link {
@@ -167,5 +141,9 @@ body {
 #thon-div {
     border: 2px solid black;
     text-align: center;
+}
+
+#navbar-div {
+    padding-bottom: 60px;
 }
 

@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PKP - Alpha Mu</title>
 
-    <!-- load css, js, other statics... -->
-    <!-- style -->
+    <!-- css -->
     <link rel="stylesheet" href="style/style.css">
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/adw8ezw.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -32,88 +38,87 @@
             <img id="star-shield-img" src="images/star-shield-outline.png" alt="pi kappa phi star shield">
         </div>
     </div>
-    <div id="nav-bar">
-        <button type="button" id="button-home" onclick="showContent('home-template')">Home</button>
-        <button type="button" id="button-recruitment" onclick="showContent('recruitment-template')">Recruitment</button>
-        <button type="button" id="button-fundraising" onclick="showContent('fundraising-template')">Fundraising</button>
-        <button type="button" id="button-contactus" onclick="showContent('contactus-template')">Contact Us</button>
+    <div id="navbar-div">
+        <nav class="nav justify-content-center">
+            <button type="button" id="button-home" onclick="showContent('home-template')">Home</button>
+            <button type="button" id="button-recruitment" onclick="showContent('recruitment-template')">Recruitment</button>
+            <button type="button" id="button-alumni" onclick="showContent('alumni-template')">Alumni</button>
+            <button type="button" id="button-current-brothers" onclick="showContent('current-brothers-template')">Current Brothers</button>
+            <button type="button" id="button-thon" onclick="showContent('thon-template')">THON</button>
+            <button type="button" id="button-penn-state" onclick="showContent('penn-state-template')">Penn State</button>
+            <button type="button" id="button-pi-kappa-phi" onclick="showContent('pi-kappa-phi-template')">Pi Kappa Phi</button>
+            <button type="button" id="button-contribute" onclick="showContent('contribute-template')">Contribute</button>
+        </nav>
     </div>
+    <!-- END CONSISTENT CONTENT -->
 
-    <div id="background-image">
-    </div>
 
     <div id="main-div">
+
+        <!-- START VARIABLE CONTENT -->
+        <template id="home-template">
+            <div id="loc-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.2320850557705!2d-77.85392769901433!3d40.795792713108916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cea8a6d8b7cbef%3A0xb3f48d1856c42e80!2s409%20E%20Fairmount%20Ave%2C%20State%20College%2C%20PA%2016801!5e0!3m2!1sen!2sus!4v1630796778313!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </template>
+
+        <template id="recruitment-template">
+            <div class="rush-stuff">
+                <div id="title-recruitment">
+                    <h2>Recruitment</h2>
+                </div>
+                <div id="rush-videos">
+                    <div id="rush-vid-fa-2021-div">
+                        <video id="rush-vid-fa-2021" controls>
+                            <source src="videos/PKP-RushVid-FA2021.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div id="rush-vid-fa-2020-div">
+                        <video id="rush-vid-fa-2020" controls>
+                            <source src="videos/PKP-RushVid-FA2020.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div id="rush-link">
+                    <a href="https://www.pennstateifc.org/registration" target="_blank">Sign Up for Rush!</a>
+                </div>
+                <br><br>
+                <div id="member-stats-div">
+                    <h1 id="member-stats-header">Member Stats</h1>
+                    <p id="active-members">Current Active Members: XX</p>
+                    <p id="alumni-members">Current Alumni: XX</p>
+                </div>
+            </div>
+        </template id="alumni-template">
+
+        <template>
+
+        </template>
+
+        <template id="current-brothers-template">
+            
+        </template>
+
+        <template id="thon-template">
+            
+        </template>
+
+        <template id="penn-state-template">
+            
+        </template>
+
+        <template id="pi-kappa-phi-template">
+            
+        </template>
+
+        <template id="contribute-template">
+            
+        </template>
         
+        <!-- END VARIABLE CONTENT -->
+
     </div>
-
-    <!-- END CONSISTENT CONTENT -->
-    <template id="home-template">
-        <div id="loc-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.2320850557705!2d-77.85392769901433!3d40.795792713108916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cea8a6d8b7cbef%3A0xb3f48d1856c42e80!2s409%20E%20Fairmount%20Ave%2C%20State%20College%2C%20PA%2016801!5e0!3m2!1sen!2sus!4v1630796778313!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-        </div>
-    </template>
-
-    <template id="recruitment-template">
-        <div class="rush-stuff">
-            <div id="title-recruitment">
-                <h2>Recruitment</h2>
-            </div>
-            <div id="rush-videos">
-                <div id="rush-vid-fa-2021-div">
-                    <video id="rush-vid-fa-2021" controls>
-                        <source src="videos/PKP-RushVid-FA2021.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div id="rush-vid-fa-2020-div">
-                    <video id="rush-vid-fa-2020" controls>
-                        <source src="videos/PKP-RushVid-FA2020.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-            <div id="rush-link">
-                <a href="https://www.pennstateifc.org/registration" target="_blank">Sign Up for Rush!</a>
-            </div>
-            <br><br>
-            <div id="member-stats-div">
-                <h1 id="member-stats-header">Member Stats</h1>
-                <p id="active-members">Current Active Members: XX</p>
-                <p id="alumni-members">Current Alumni: XX</p>
-            </div>
-        </div>
-    </template>
-
-    <template id="fundraising-template">
-        <div id="abex-div">
-            <p>ABEX INFO, DESCRIPTION</p>
-            <p>ABEX FUNDRAISING GOAL, CURRENT RAISIED, GRAPHIC TO DISPLAY</p>
-        </div>
-        <div id="thon-div">
-            <p>THON INFO, DESCRIPTION</p>
-            <p>THON PARTNER</p>
-            <p>THON GOAL, CURRENT RAISED, GRAPHIC TO DISPLAY</p>
-        </div>
-    </template>
-
-    <template id="contactus-template">
-        <div id="socials">
-            <div id="socials-text">
-                <h1>Find Us on Social Media:</h1>
-            </div>
-            <div id="instagram-icon-div">
-                <a id="instagram-link-img" href="https://www.instagram.com/pikapp_psu/" target="_blank">
-                    <img id="instagram-icon-img" src="images/instagram-icon.png" alt="instagram button with link">
-                </a>
-                <a id="instagram-link-txt" href="https://www.instagram.com/pikapp_psu/" target="_blank">
-                    <p>@pikapp_psu</p>
-                </a>
-            </div>
-        </div>
-    </template>
-
-    <!-- START VARIABLE CONTENT -->
-    
-    <!-- END VARIABLE CONTENT -->
 
 </body>
 <script>
